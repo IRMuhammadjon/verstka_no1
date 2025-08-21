@@ -70,4 +70,63 @@ body {
     .gap-3 {
         gap: 1rem !important;
     }
+    
+    /* Add more padding for mobile */
+    .container {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    
+    /* Main content padding */
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Section spacing */
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Card padding for mobile */
+    .card-body {
+        padding: 1.5rem !important;
+    }
+    
+    /* Light background sections */
+    .bg-light.rounded {
+        margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important;
+    }
+    
+    /* Navigation padding */
+    .navbar .container-fluid {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    
+    /* Breadcrumb padding */
+    .breadcrumb {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    
+    /* Hero section spacing */
+    .display-4 {
+        font-size: 1.8rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Paragraph text spacing */
+    p.fs-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Footer columns spacing */
+    .footer .container {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
 }
