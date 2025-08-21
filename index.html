@@ -4,310 +4,365 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-Bank - Елизавета</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-override">
         <!-- Navigation -->
-        <nav class="navigation">
-            <div class="nav-left">
-                <span class="tbank-logo">⚡</span>
-                <span class="nav-text">Частным лицам</span>
-                <span class="nav-text">Бизнесу</span>
-                <span class="nav-text">Премиум</span>
-                <span class="nav-text">Еще</span>
-            </div>
-            <div class="nav-right">
-                <span class="login-btn">Личный кабинет 👤</span>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container-fluid px-3">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class="fas fa-bolt text-warning fs-4 me-2"></i>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Частным лицам</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Бизнесу</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Премиум</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Еще</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-user me-1"></i>Личный кабинет
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <!-- Breadcrumb -->
-        <div class="breadcrumb">
-            <span>Банк → О банке</span>
-        </div>
+        <nav aria-label="breadcrumb" class="px-3 py-2 bg-light">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#" class="text-muted text-decoration-none small">Т-Блог</a></li>
+                <li class="breadcrumb-item active text-muted small">О финансах</li>
+            </ol>
+        </nav>
 
         <!-- Investment Badge -->
-        <div class="investment-section">
-            <span class="investment-label">ИНВЕСТИЦИИ</span>
-            <span class="recommended">РЕКОМЕНДУЕМ ДЛЯ ВСЕХ</span>
-            <div class="investment-badge">💰 СКОРЕЕ НАЧИНАТЬ</div>
+        <div class="text-center py-4 bg-white">
+            <div class="container">
+                <small class="text-muted d-block mb-2" style="font-size: 11px; letter-spacing: 1px;">ИНВЕСТИЦИИ • ОБНОВЛЕНО 20 ИЮНЯ</small>
+                <div class="mb-3">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill">
+                        <i class="fas fa-shield-alt me-1"></i>ОДОБРЕНО БАНКОМ
+                    </span>
+                </div>
+            </div>
         </div>
 
         <!-- Main Content -->
-        <main class="main-content">
+        <main class="container py-5">
             <!-- Hero Section -->
-            <section class="hero-section">
-                <h1>Инвестиции с Елизаветой — просто, прозрачно, с выплатами уже на следующий день</h1>
-                <p class="hero-subtitle">
-                    Присоединяйтесь к Елизавете, где каждый день инвесторы получают прибыль. Старт — от 500 ₽. Всё легко: без сложностей, без задержек.
+            <section class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-4" style="color: #2c2c2c; line-height: 1.2;">Инвестиции с Елизаветой — просто, прозрачно, с выплатами уже на следующий день</h1>
+                <p class="fs-5 text-muted mx-auto mb-5" style="max-width: 700px; line-height: 1.5;">
+                    Присоединяйтесь к Елизавете, где каждый день инвесторы получают прибыль. Старт — от 500 ₽. Всё чётко: без сложностей, без задержек.
                 </p>
             </section>
 
             <!-- Image Cards Section -->
-            <section class="image-cards">
-                <div class="card">
-                    <img src="2cab5aeaca0fd8ece91d29f99c9056a4125da0dc.jpg" alt="Елизавета в ресторане">
+            <section class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="2cab5aeaca0fd8ece91d29f99c9056a4125da0dc.jpg" class="card-img-top" alt="Елизавета в ресторане" style="height: 200px; object-fit: cover;">
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="c598ba70bf239503bf8c3d5d7641cb504b382801.jpg" alt="Портрет Елизавета">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="c598ba70bf239503bf8c3d5d7641cb504b382801.jpg" class="card-img-top" alt="Портрет Елизавета" style="height: 200px; object-fit: cover;">
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="d70f1b1b8c609773709242907e774904a874e7d4.jpg" alt="Елизавета за столом">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="d70f1b1b8c609773709242907e774904a874e7d4.jpg" class="card-img-top" alt="Елизавета за столом" style="height: 200px; object-fit: cover;">
+                    </div>
                 </div>
             </section>
 
             <!-- Why It Works Section -->
-            <section class="why-works">
-                <h2>Почему это работает</h2>
-                <div class="work-item">
-                    <strong>Выплаты — на следующий день.</strong> Заработали — получили. Никаких «ожидайте в течение недель».
+            <section class="mb-5">
+                <h2 class="h3 fw-bold mb-4" style="color: #2c2c2c;">Почему это работает</h2>
+                <div class="mb-4">
+                    <p class="fs-6 mb-3"><strong>Выплаты — на следующий день.</strong> Заработали — получили. Никаких «ожидайте в течение недель».</p>
                 </div>
-                <div class="work-item">
-                    <strong>Прозрачность.</strong> Сценарии сделок и реальных выплат — каждый день в канале.
+                <div class="mb-4">
+                    <p class="fs-6 mb-3"><strong>Прозрачность.</strong> Сценарии сделок и реальных выплат — каждый день в канале.</p>
                 </div>
-                <div class="work-item">
-                    <strong>Обратная связь.</strong> Елизавета лично отвечает на вопросы и помогает на каждом шаге.
+                <div class="mb-4">
+                    <p class="fs-6 mb-3"><strong>Обратная связь.</strong> Елизавета лично отвечает на вопросы и помогает на каждом шаге.</p>
                 </div>
             </section>
 
             <!-- Target Audience Section -->
-            <section class="target-audience">
-                <h2>Это для вас если</h2>
-                <div class="audience-items">
-                    <div class="audience-item">
-                        <span class="bullet">—</span>
-                        <div>
-                            <strong>Вы новичок.</strong> Всё объясняется простыми словами, шаг за шагом.
-                        </div>
-                    </div>
-                    <div class="audience-item">
-                        <span class="bullet">—</span>
-                        <div>
-                            <strong>Вы инвестируете давно.</strong> Удобный формат, стабильный доход и быстрые выводы.
-                        </div>
-                    </div>
-                    <div class="audience-item">
-                        <span class="bullet">—</span>
-                        <div>
-                            <strong>Ваша прозрачность.</strong> Отчёты, комментарии, живое общение — каждый день.
-                        </div>
-                    </div>
+            <section class="mb-5">
+                <h2 class="h3 fw-bold mb-4" style="color: #2c2c2c;">Это для вас если</h2>
+                <div class="mb-3">
+                    <p class="fs-6 mb-0"><span class="text-muted me-2">—</span><strong>Вы новичок.</strong> Всё объясняется простым языком, шаг за шагом.</p>
+                </div>
+                <div class="mb-3">
+                    <p class="fs-6 mb-0"><span class="text-muted me-2">—</span><strong>Вы инвестируете давно.</strong> Удобный формат, стабильный доход и быстрые выводы.</p>
+                </div>
+                <div class="mb-3">
+                    <p class="fs-6 mb-0"><span class="text-muted me-2">—</span><strong>Важна прозрачность.</strong> Отчёты, комментарии, живое общение — каждый день.</p>
                 </div>
             </section>
 
             <!-- How To Start Section -->
-            <section class="how-to-start">
-                <h2>Как начать?</h2>
-                <div class="start-steps">
-                    <div class="step">
-                        <span class="bullet">—</span>
-                        <span>Пишите в личные сообщения "Хочу на сессию"</span>
-                    </div>
-                    <div class="step">
-                        <span class="bullet">—</span>
-                        <span>Вносите депозит — от 500 ₽</span>
-                    </div>
-                    <div class="step">
-                        <span class="bullet">—</span>
-                        <span>Получаете прибыль — уже на следующий день</span>
-                    </div>
+            <div class="bg-light rounded p-4 mb-5">
+                <h2 class="h3 fw-bold mb-4" style="color: #2c2c2c;">Как начать?</h2>
+                <div class="mb-3">
+                    <p class="fs-6 mb-0"><span class="text-muted me-2">—</span><strong>Пишите в личные сообщения</strong> "Хочу на сессию".</p>
                 </div>
-            </section>
+                <div class="mb-3">
+                    <p class="fs-6 mb-0"><span class="text-muted me-2">—</span><strong>Вносите депозит</strong> — от 500 ₽.</p>
+                </div>
+                <div class="mb-3">
+                    <p class="fs-6 mb-0"><span class="text-muted me-2">—</span><strong>Получаете прибыль</strong> — уже на следующий день.</p>
+                </div>
+            </div>
 
             <!-- Testimonials Section -->
-            <section class="testimonials-section">
-                <h2>Что говорят участники</h2>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <div class="testimonial-header">
-                            <span class="user-icon">👤</span>
-                            <span class="user-name">Дмитрий</span>
+            <section class="mb-5">
+                <h2 class="h3 fw-bold mb-4" style="color: #2c2c2c;">Что говорят участники</h2>
+                
+                <div class="mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 32px; height: 32px;">
+                            <i class="fas fa-user text-white" style="font-size: 14px;"></i>
                         </div>
-                        <p>Всё работает как часы — вчерашние без задержек.</p>
+                        <div>
+                            <div class="fw-bold mb-1">Дмитрий</div>
+                            <p class="mb-0 text-muted">Всё работает как часы — выплаты без задержек.</p>
+                        </div>
                     </div>
-                    <div class="testimonial">
-                        <div class="testimonial-header">
-                            <span class="user-icon">👤</span>
-                            <span class="user-name">Антон</span>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 32px; height: 32px;">
+                            <i class="fas fa-user text-white" style="font-size: 14px;"></i>
                         </div>
-                        <p>Запросил вывод капала — утром деньги уже пришли.</p>
+                        <div>
+                            <div class="fw-bold mb-1">Антон</div>
+                            <p class="mb-0 text-muted">Запросил вывод днём — утром деньги уже пришли.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Summary Section -->
-            <section class="summary">
-                <h2>Итог</h2>
-                <p>Начали здесь — только честный подход. «Инвестиции с Елизаветой» — это прозрачность, поддержка и реальные выплаты. Обратись сами!</p>
+            <section class="mb-5">
+                <h2 class="h3 fw-bold mb-4" style="color: #2c2c2c;">Итог</h2>
+                <p class="fs-6 mb-0">Никаких чудес — только честный подход. «Инвестиции с Елизаветой» — это прозрачность, поддержка и реальные выплаты. Убедитесь сами.</p>
             </section>
 
             <!-- Rating Section -->
-            <section class="rating">
-                <h2>Как вам статья?</h2>
-                <div class="rating-buttons">
-                    <button class="like-btn">👍</button>
-                    <button class="dislike-btn">👎</button>
+            <section class="mb-5">
+                <h2 class="h3 fw-bold mb-4" style="color: #2c2c2c;">Как вам статья?</h2>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-light border d-flex align-items-center" style="width: 60px; height: 50px; justify-content: center;">
+                        <i class="fas fa-thumbs-up" style="font-size: 18px; color: #6c757d;"></i>
+                    </button>
+                    <button class="btn btn-light border d-flex align-items-center" style="width: 60px; height: 50px; justify-content: center;">
+                        <i class="fas fa-thumbs-down" style="font-size: 18px; color: #6c757d;"></i>
+                    </button>
                 </div>
             </section>
 
             <!-- Related Articles -->
-            <section class="related-articles">
-                <h2>Другие статьи по этой теме</h2>
-                <div class="article-category">ИНВЕСТИЦИИ • СОВЕТЫ ОТ ЭКСПЕРТОВ</div>
-                <div class="article-title">6 причин открыть ИИС</div>
-                <div class="article-illustration">
-                    <img src="briefcase.png" alt="ИИС иллюстрация">
+            <section class="bg-light py-5 mb-0">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="display-6 fw-bold mb-5" style="color: #2c2c2c;">Другие статьи по этой теме</h2>
+                        
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="bg-white rounded-3 shadow-sm p-4 mb-5">
+                                    <div class="d-flex align-items-center justify-content-center mb-3">
+                                        <small class="text-muted me-2" style="font-size: 11px; letter-spacing: 1px;">ИНВЕСТИЦИИ</small>
+                                        <span class="text-muted mx-2">•</span>
+                                        <small class="text-muted" style="font-size: 11px;">ОБНОВЛЕНО 20 ИЮНЯ</small>
+                                    </div>
+                                    
+                                    <h3 class="h4 fw-bold mb-4" style="color: #2c2c2c;">6 причин открыть ИИС</h3>
+                                    
+                                    <div class="mb-4">
+                                        <img src="briefcase.png" class="img-fluid" alt="ИИС иллюстрация" style="max-width: 300px; height: auto;">
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <a href="#" class="btn text-primary border px-3 py-1 shadow-sm small" style="border-radius: 6px; background-color: #f1f3f4; border-color: #d6d8db;">На главную блога</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="read-more-btn">Читать больше</button>
             </section>
 
             <!-- Footer Links -->
-            <footer class="footer">
-                <div class="footer-columns">
-                    <div class="footer-column">
-                        <ul>
-                            <li><a href="#">Банк</a></li>
-                            <li><a href="#">Карточные счета</a></li>
-                            <li><a href="#">Депозитные счета</a></li>
-                            <li><a href="#">Кредиты</a></li>
-                            <li><a href="#">Переводы</a></li>
-                            <li><a href="#">Автокредитование</a></li>
-                            <li><a href="#">Автострахование</a></li>
-                            <li><a href="#">Банкоматы</a></li>
-                            <li><a href="#">АЗС</a></li>
-                            <li><a href="#">Партнёры</a></li>
-                            <li><a href="#">Архив</a></li>
-                            <li><a href="#">Служба качества</a></li>
-                            <li><a href="#">Безопасность</a></li>
-                            <li><a href="#">Акции</a></li>
-                            <li><a href="#">О Тинькофф</a></li>
-                        </ul>
+            <footer class="footer bg-light border-top py-5">
+                <div class="container">
+                    <div class="row">
+                        <!-- ЧАСТНЫМ ЛИЦАМ -->
+                        <div class="col-lg-2 col-md-4 col-6 mb-4">
+                            <h6 class="text-muted text-uppercase mb-3" style="font-size: 11px; letter-spacing: 1px;">ЧАСТНЫМ ЛИЦАМ</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Банк</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Кредитные карты</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Дебетовые карты</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Премиум</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Иностранцам</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Кредит наличными</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Рефинансирование</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Автокредит</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- ИНВЕСТИЦИИ -->
+                        <div class="col-lg-2 col-md-4 col-6 mb-4">
+                            <h6 class="text-muted text-uppercase mb-3" style="font-size: 11px; letter-spacing: 1px;">ИНВЕСТИЦИИ</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Брокерский счет</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">ИИС</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Премиум</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Акции</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Валюты</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Фонды</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Облигации</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- СТРАХОВАНИЕ -->
+                        <div class="col-lg-2 col-md-4 col-6 mb-4">
+                            <h6 class="text-muted text-uppercase mb-3" style="font-size: 11px; letter-spacing: 1px;">СТРАХОВАНИЕ</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">ОСАГО</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Каско</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Каско по подписке</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Путешествия за границу</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Путешествия по России</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Ипотека</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- МЛ И БИЗНЕС -->
+                        <div class="col-lg-2 col-md-4 col-6 mb-4">
+                            <h6 class="text-muted text-uppercase mb-3" style="font-size: 11px; letter-spacing: 1px;">МЛ И БИЗНЕС</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Малый бизнес</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Расчетный счет</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Бизнес-консультация</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Регистрация ИП</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Регистрация ООО</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Эквайринг</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Кредиты</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Госуслуги</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- СРЕДНИЙ И КРУПНЫЙ БИЗНЕС -->
+                        <div class="col-lg-2 col-md-4 col-6 mb-4">
+                            <h6 class="text-muted text-uppercase mb-3" style="font-size: 11px; letter-spacing: 1px;">СРЕДНИЙ И КРУПНЫЙ БИЗНЕС</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Корпоративы</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Расчетный счет</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Сервисы для зарплат</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Торговый эквайринг</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Кредиты</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Депозиты</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">ВЭД</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- ЕЩЕ ОТ Т-БАНКА -->
+                        <div class="col-lg-2 col-md-4 col-6 mb-4">
+                            <h6 class="text-muted text-uppercase mb-3" style="font-size: 11px; letter-spacing: 1px;">ЕЩЕ ОТ Т-БАНКА</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Полезное</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">T-Pay</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Вход с T-ID</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Идентификация с T-ID</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Платежи</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Переводы на карту</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Отзывы</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-dark small">Мерч Т-Банка</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer-column">
-                        <ul>
-                            <li><a href="#">Инвестиции</a></li>
-                            <li><a href="#">Брокерский счёт</a></li>
-                            <li><a href="#">ИИС</a></li>
-                            <li><a href="#">Акции</a></li>
-                            <li><a href="#">Облигации</a></li>
-                            <li><a href="#">Валюта</a></li>
-                            <li><a href="#">Фьючерсы</a></li>
-                            <li><a href="#">Фонды</a></li>
-                            <li><a href="#">Продвинутые инвестиции</a></li>
-                            <li><a href="#">Аналитика</a></li>
-                            <li><a href="#">Маржин</a></li>
-                            <li><a href="#">Торговый терминал</a></li>
-                            <li><a href="#">Обслуживание</a></li>
-                            <li><a href="#">Безрисковый торговый план</a></li>
-                            <li><a href="#">Тарифы</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <ul>
-                            <li><a href="#">Страхование</a></li>
-                            <li><a href="#">ОСАГО</a></li>
-                            <li><a href="#">Каско</a></li>
-                            <li><a href="#">Выезд ДТП</a></li>
-                            <li><a href="#">На дачах случай</a></li>
-                            <li><a href="#">Спорт</a></li>
-                            <li><a href="#">Здоровье</a></li>
-                            <li><a href="#">Недвижимость</a></li>
-                            <li><a href="#">Путешествия</a></li>
-                            <li><a href="#">Электронные полисы</a></li>
-                            <li><a href="#">Цифровые документы</a></li>
-                            <li><a href="#">Штрафы ГИБДД</a></li>
-                            <li><a href="#">Выплаты</a></li>
-                            <li><a href="#">Автоэксперт</a></li>
-                            <li><a href="#">Тарифы</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <ul>
-                            <li><a href="#">Мобайл Банкинг</a></li>
-                            <li><a href="#">Мобильный банк</a></li>
-                            <li><a href="#">Счета, карты и депозиты</a></li>
-                            <li><a href="#">Виды финансового учёта</a></li>
-                            <li><a href="#">Платёжный график Р→Р</a></li>
-                            <li><a href="#">Платежи</a></li>
-                            <li><a href="#">Переводы</a></li>
-                            <li><a href="#">Портфель инвестиций</a></li>
-                            <li><a href="#">Отчётность банковская</a></li>
-                            <li><a href="#">Переводы международные</a></li>
-                            <li><a href="#">ФНС банка</a></li>
-                            <li><a href="#">Переводы валютные</a></li>
-                            <li><a href="#">Статистика и ЦБ ПАО</a></li>
-                            <li><a href="#">Покупки</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <ul>
-                            <li><a href="#">Сервисы в корпунах</a></li>
-                            <li><a href="#">Системы</a></li>
-                            <li><a href="#">Малому бизнесу</a></li>
-                            <li><a href="#">Крупному бизнесу</a></li>
-                            <li><a href="#">Текущие счета</a></li>
-                            <li><a href="#">Карты для юрлиц</a></li>
-                            <li><a href="#">Депозиты</a></li>
-                            <li><a href="#">Кредиты</a></li>
-                            <li><a href="#">Торговый эквайринг</a></li>
-                            <li><a href="#">Интернет-эквайринг</a></li>
-                            <li><a href="#">Зарплатные проекты</a></li>
-                            <li><a href="#">API банка инвестиций</a></li>
-                            <li><a href="#">Тарифы для юрлиц</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <ul>
-                            <li><a href="#">На ТТ Тиньк</a></li>
-                            <li><a href="#">Кредитные тарифы</a></li>
-                            <li><a href="#">Журнал</a></li>
-                            <li><a href="#">Об осуществления банковских операций</a></li>
-                            <li><a href="#">Базовый тариф</a></li>
-                            <li><a href="#">Уведомления ЦБ</a></li>
-                            <li><a href="#">Качество обслуживания</a></li>
-                            <li><a href="#">Лицензии</a></li>
-                            <li><a href="#">Финансовые показатели</a></li>
-                            <li><a href="#">Корпоративное управление</a></li>
-                            <li><a href="#">Персональные данные</a></li>
-                            <li><a href="#">Безопасность и мошенничество</a></li>
-                            <li><a href="#">Раскрытие информации</a></li>
-                            <li><a href="#">Тарифы и лимиты</a></li>
-                            <li><a href="#">Вакансии в Тинькофф</a></li>
-                        </ul>
+                    
+                    <!-- Back to top link -->
+                    <div class="text-center mt-5 pt-4 border-top">
+                        <a href="#" class="btn text-primary border px-3 py-1 shadow-sm small" style="border-radius: 6px; background-color: #f1f3f4; border-color: #d6d8db;">На главную блога</a>
                     </div>
                 </div>
                 
                 <!-- Bottom Footer -->
-                <div class="bottom-footer">
-                    <div class="footer-logo">
-                        <span class="tbank-icon">⚡</span>
-                    </div>
-                    <div class="footer-links">
-                        <a href="#">О банке</a>
-                        <a href="#">Feedback</a>
-                        <a href="#">Для СМИ</a>
-                        <a href="#">Пресс-релизы</a>
-                        <a href="#">Инвесторам</a>
-                        <a href="#">Работа в Тинькофф</a>
-                    </div>
-                    <div class="contact-info">
-                        <span class="phone">8 800 333-33-33</span>
-                        <span class="sms">999</span>
+                <div class="bg-dark text-light py-4">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
+                                <i class="fas fa-bolt text-warning fs-2"></i>
+                            </div>
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                                    <a href="#" class="text-light text-decoration-none">О банке</a>
+                                    <a href="#" class="text-light text-decoration-none">Feedback</a>
+                                    <a href="#" class="text-light text-decoration-none">Для СМИ</a>
+                                    <a href="#" class="text-light text-decoration-none">Пресс-релизы</a>
+                                    <a href="#" class="text-light text-decoration-none">Инвесторам</a>
+                                    <a href="#" class="text-light text-decoration-none">Работа в Тинькофф</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center text-md-end">
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+                                    <span class="h5 mb-0"><i class="fas fa-phone me-2"></i>8 800 333-33-33</span>
+                                    <span class="badge bg-warning text-dark px-2 py-1">999</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="footer-bottom">
-                    <p>© 2006—2023 АО «Тинькофф» | Генеральная лицензия ЦБ РФ №2673</p>
-                    <div class="social-icons">
-                        <span>⚫</span>
-                        <span>📱</span>
-                        <span>📧</span>
-                        <span>🔗</span>
+                <div class="bg-darker text-light py-3">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 text-center text-md-start mb-2 mb-md-0">
+                                <small>© 2006—2023 АО «Тинькофф» | Генеральная лицензия ЦБ РФ №2673</small>
+                            </div>
+                            <div class="col-md-4 text-center text-md-end">
+                                <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                                    <i class="fab fa-telegram fs-4"></i>
+                                    <i class="fab fa-whatsapp fs-4"></i>
+                                    <i class="fas fa-envelope fs-4"></i>
+                                    <i class="fas fa-link fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
         </main>
     </div>
+    
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
